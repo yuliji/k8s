@@ -5,7 +5,7 @@ metadata:
   labels:
     app: vote
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: vote
@@ -17,5 +17,3 @@ spec:
       containers:
         - name: vote
           image: dockersamples/examplevotingapp_vote:before
-          ports:
-            - containerPort: 80
